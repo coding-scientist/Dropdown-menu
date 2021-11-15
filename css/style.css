@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e4f3f7;
+}
+
+header {
+  background-color: #fff;
+  min-height: 100px;
+  padding: 2rem 0;
+}
+
+header ul {
+  display: flex;
+}
+
+header .logo {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  margin-left: 1.2rem;
+  cursor: pointer;
+}
+
+header .logo span {
+  color: #0b8b9c;
+}
+
+header .fa-bars {
+  margin-right: 1rem;
+  font-size: 1.9rem;
+  cursor: pointer;
+  transition: all 900ms ease;
+  padding: .1rem;
+  border: 4px solid #0b8b9c;
+  border-radius: 6px;
+}
+
+header .fa-bars:active {
+  opacity: .8;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.desktop-page-links {
+  list-style: none;
+  display: none;
+}
+
+.desktop-page-links li {
+  margin: 0 2rem;
+}
+
+.desktop-page-links li:active {
+  opacity: .7;
+  transform: scale(0.95);
+}
+
+.desktop-page-links a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.desktop-social-media-links {
+  list-style: none;
+  margin-right: 2rem;
+  display: none;
+}
+
+.desktop-social-media-links li {
+  margin: 0 .7rem;
+}
+
+.desktop-social-media-links i {
+  font-size: 1.4rem;
+  color: #18b1c5;
+}
+
+.desktop-social-media-links i:active {
+  opacity: .5;
+}
+
+.mobile-dropdown-menu {
+  position: absolute;
+  top: -6rem;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 900ms ease;
+  background-color: #fff;
+  padding: 1rem 0 1rem 1rem;
+}
+
+.mobile-dropdown-menu ul {
+  display: initial;
+}
+
+.mobile-dropdown-menu a {
+  transition: transform 450ms ease, background 450ms ease;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+}
+
+.mobile-dropdown-menu a:hover {
+  transform: translate(10px, 0);
+  background: #a8d2e4;
+}
+
+.mobile-dropdown-menu a:active {
+  opacity: .8;
+}
+
+.mobile-dropdown-menu li {
+  color: #000;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  line-height: 40px;
+  list-style: none;
+}
+
+@media (min-width: 1120px) {
+  .desktop-page-links, .desktop-social-media-links {
+    display: flex;
+  }
+  .hamburger {
+    display: none;
+  }
+  .mobile-dropdown-menu {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
